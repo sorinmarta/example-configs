@@ -1,0 +1,31 @@
+{
+	"name": "tadamuscom/name",
+	"description": "",
+	"type": "wordpress-plugin",
+	"require-dev": {
+		"johnpbloch/wordpress-core": "*",
+		"phpunit/phpunit": "^9.4",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"wp-coding-standards/wpcs": "*",
+		"phpcsstandards/phpcsutils": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"MigrateMonkey\\": "app/"
+		}
+	},
+	"scripts": {
+		"install-codestandards": [
+			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+		],
+		"phpcs": [
+			"@php phpcs ."
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
