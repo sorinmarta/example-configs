@@ -2,9 +2,9 @@
   "name": "name",
   "description": "",
   "scripts": {
-    "build": "rm -f ./.devbuild && wp-scripts build",
-    "dev": "touch ./.devbuild && wp-scripts build",
-    "start": "touch ./.devbuild && wp-scripts start",
+    "build": "wp-scripts build",
+    "dev": "wp-scripts build",
+    "start": "wp-scripts start",
     "start:hot": "npm run start -- --hot",
     "watch": "npm run start",
     "update-deps": "npx npm-check-updates -ut minor",
