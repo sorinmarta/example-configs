@@ -10,19 +10,6 @@
 		"wp-coding-standards/wpcs": "*",
 		"phpcsstandards/phpcsutils": "*"
 	},
-	"autoload": {
-		"psr-4": {
-			"MigrateMonkey\\": "app/"
-		}
-	},
-	"scripts": {
-		"install-codestandards": [
-			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-		],
-		"phpcs": [
-			"@php phpcs ."
-		]
-	},
 	"config": {
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true
