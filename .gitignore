@@ -10,3 +10,4 @@ composer.lock
 **/vendor
 .vscode/launch.json
 wp-fusion.code-workspace
+public/
